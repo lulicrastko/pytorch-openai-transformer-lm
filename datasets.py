@@ -16,6 +16,7 @@ def _rocstories(path):
         st = []
         t1 = []
         ct1 = []
+        ct1 = []
         ct2 = []
         y = []
         for i, line in enumerate(tqdm(list(f), ncols=80, leave=False)):
