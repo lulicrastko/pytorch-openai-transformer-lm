@@ -14,6 +14,9 @@ class MultipleChoiceLossCompute:
         if lm_logits is not None:
             x_shifted = X[:, :, 1:, 0].contiguous().view(-1)  # Shape: 252
             M = M.view(-1, M.size(2))
+            M = M.view(-1, M.size(2))
+            M = M.view(-1, M.size(2))
+            M = M.view(-1, M.size(2))
             lm_losses = self.lm_criterion(lm_logits, x_shifted)
             lm_losses = lm_losses.view(X.size(0) * X.size(1), X.size(2) - 1)
             lm_losses = lm_losses * M[:, 1:]
