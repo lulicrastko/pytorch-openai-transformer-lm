@@ -42,12 +42,9 @@ def rocstories(data_dir, n_train=1497, n_valid=374):
         trX2.append(c1)
         trX3.append(c2)
         trY.append(y)
-    for s, c1, c2, y in zip(tr_storys, tr_comps1, tr_comps2, tr_ys):
-        trX1.append(s)
-        trX2.append(c1)
-        trX3.append(c2)
-        trY.append(y)
+     
 
+    vaX1, vaX2, vaX3 = [], [], []
     vaX1, vaX2, vaX3 = [], [], []
     vaY = []
     for s, c1, c2, y in zip(va_storys, va_comps1, va_comps2, va_ys):
