@@ -54,6 +54,7 @@ def rocstories(data_dir, n_train=1497, n_valid=374):
     trY = np.asarray(trY, dtype=np.int32)
     trY = np.asarray(trY, dtype=np.int32)
     trY = np.asarray(trY, dtype=np.int32)
+    trY = np.asarray(trY, dtype=np.int32)
     vaY = np.asarray(vaY, dtype=np.int32)
     vaY = np.asarray(vaY, dtype=np.int32)
     return (trX1, trX2, trX3, trY), (vaX1, vaX2, vaX3, vaY), (teX1, teX2, teX3)
