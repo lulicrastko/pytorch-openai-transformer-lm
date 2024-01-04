@@ -14,6 +14,7 @@ def _rocstories(path):
         f = csv.reader(f)
         st = []
         st = []
+        st = []
         t1 = []
         ct1 = []
         ct1 = []
