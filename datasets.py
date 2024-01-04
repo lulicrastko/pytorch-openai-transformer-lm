@@ -13,6 +13,7 @@ def _rocstories(path):
     with open(path, encoding='utf_8') as f:
         f = csv.reader(f)
         st = []
+        st = []
         t1 = []
         ct1 = []
         ct2 = []
